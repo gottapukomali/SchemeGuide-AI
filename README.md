@@ -2,7 +2,7 @@
 
 YojanaConnect is an AI-powered chatbot that helps users access accurate information about Central and State Government Schemes. Using Retrieval-Augmented Generation (RAG), it provides details such as eligibility, benefits, required documents, and application procedures.
 
- ##Features
+ ## Features
 
 AI chatbot for government schemes
 
@@ -16,7 +16,7 @@ Fast Flask backend API
 
 Vector search using ChromaDB/FAISS
 
-##Project Structure
+## Project Structure
 govt-schemes-chatbot/
 ├── data/
 ├── embeddings/
@@ -25,12 +25,12 @@ govt-schemes-chatbot/
 ├── main.py
 └── requirements.txt
 
-##Technologies Used
+## Technologies Used
 
 Backend: Python, Flask/FastAPI, Sentence Transformers, ChromaDB/FAISS, OpenAI
 Frontend: HTML, CSS, JavaScript
 
-##Installation
+## Installation
 1. Clone the repository
 git clone https://github.com/yourusername/govt-schemes-chatbot.git
 cd govt-schemes-chatbot
@@ -56,7 +56,7 @@ python main.py --embed
 6. Run the backend
 python main.py
 
-##How It Works (RAG Pipeline)
+## How It Works (RAG Pipeline)
 
 User asks a question
 
@@ -68,7 +68,7 @@ Retrieved text + query → OpenAI
 
 Bot returns final answer
 
-##Example Queries
+## Example Queries
 
 “Schemes for farmers”
 
@@ -78,7 +78,7 @@ Bot returns final answer
 
 “Am I eligible for PMAY?”
 
-##Deployment Options
+## Deployment Options
 
 Render
 
@@ -90,7 +90,7 @@ AWS
 
 Vercel (Frontend) + Render (Backend)
 
-##Future Enhancements
+## Future Enhancements
 
 Multi-language support
 
@@ -102,11 +102,11 @@ WhatsApp/Telegram bot
 
 Admin dashboard
 
-##License
+## License
 
 Open-source for educational use.
 
-##Author
+## Author
 
 Your Name
 Final Year Capstone Project – Government Schemes Chatbot
