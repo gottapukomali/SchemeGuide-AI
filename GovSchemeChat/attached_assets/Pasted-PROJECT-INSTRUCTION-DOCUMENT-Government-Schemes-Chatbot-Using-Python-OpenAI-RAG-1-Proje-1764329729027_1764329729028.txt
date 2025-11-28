@@ -1,0 +1,299 @@
+PROJECT INSTRUCTION DOCUMENT
+
+Government Schemes Chatbot Using Python + OpenAI + RAG
+
+⭐ 1. Project Overview
+
+This project aims to build an intelligent chatbot that provides accurate information about Central and State Government Schemes. The chatbot will use Artificial Intelligence (AI), Natural Language Processing (NLP), and a Retrieval-Augmented Generation (RAG) model to answer queries such as eligibility, benefits, required documents, and application processes.
+
+⭐ 2. Project Objectives
+
+Provide users with accurate information about government schemes.
+
+Build an AI chatbot using Python and OpenAI API.
+
+Implement RAG to fetch scheme data from uploaded documents.
+
+Create a simple and interactive frontend UI for user interaction.
+
+Demonstrate AI + backend + dataset + UI skills for a capstone project.
+
+⭐ 3. Project Requirements
+
+3.1 Software Requirements
+
+Python 3.9+
+
+VS Code / PyCharm
+
+Pip (Python package manager)
+
+Browser (Chrome/Firefox)
+
+OpenAI API key (free tier works)
+
+3.2 Python Libraries
+
+openai
+
+faiss-cpu
+
+langchain
+
+flask or fastapi
+
+chromadb
+
+sentence-transformers
+
+python-dotenv
+
+3.3 Hardware Requirements
+
+4GB RAM minimum
+
+Stable internet connection
+
+⭐ 4. Project Architecture
+
+User → Frontend → Flask Backend → RAG System → OpenAI → Response
+
+Components:
+
+Frontend (HTML/CSS/JS)
+
+Backend API (Flask or FastAPI)
+
+Document Processor (PDF/Text)
+
+Embedding Model (Sentence Transformers)
+
+Vector Database (FAISS/ChromaDB)
+
+OpenAI for final response generation
+
+⭐ 5. Step-by-Step Instructions
+
+STEP 1 — Set Up Project Folder
+
+Create a folder such as:
+
+govt-schemes-chatbot/
+
+├── data/
+
+├── app/
+
+├── frontend/
+
+├── embeddings/
+
+├── main.py
+
+├── requirements.txt
+
+STEP 2 — Collect Government Scheme Data
+
+Create a dataset containing:
+
+For Each Scheme:
+
+Scheme Name
+
+Benefits
+
+Eligibility Criteria
+
+Required Documents
+
+Application Process
+
+Website Link
+
+Target Group (students, farmers, women, etc.)
+
+Save them as:
+
+PDF files
+
+Text files
+
+CSV files
+
+Place in /data folder.
+
+STEP 3 — Convert Documents into Embeddings
+
+Use Sentence Transformers to convert scheme data into vectors.
+
+Example code:
+
+from sentence_transformers import SentenceTransformer
+
+import chromadb
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+Store embeddings in ChromaDB/FAISS.
+
+STEP 4 — Build the RAG Pipeline
+
+RAG steps:
+
+User enters query
+
+Convert query → embedding
+
+Search vector database for relevant schemes
+
+Retrieve top matches
+
+Send retrieved text + query to OpenAI
+
+Generate final answer
+
+STEP 5 — Build Backend (Flask)
+
+Routes:
+
+/ask → receives question
+
+/embed → builds vector DB
+
+/search → fetches matched text
+
+/chat → returns OpenAI answer
+
+STEP 6 — Build the Frontend UI
+
+Create simple files:
+
+index.html
+
+style.css
+
+script.js
+
+UI Contains:
+
+Chat window
+
+Input box
+
+Send button
+
+Response area
+
+STEP 7 — Integrate Frontend + Backend
+
+Use fetch/axios to call Flask API:
+
+fetch("http://localhost:5000/chat", {
+
+method: "POST",
+
+body: JSON.stringify({ question: userText })
+
+})
+
+STEP 8 — Testing the Chatbot
+
+Test with real questions:
+
+“Am I eligible for PMAY?”
+
+“Government schemes for farmers?”
+
+“Documents needed for PM Kisan?”
+
+“Student scholarship schemes?”
+
+Record results in a table.
+
+STEP 9 — Add Additional Features (Optional but High Marks)
+
+Advanced Features:
+
+Voice input/output
+
+WhatsApp/Telegram integration
+
+Scheme recommendation engine
+
+User profile-based suggestions
+
+Admin dashboard to add new schemes
+
+STEP 10 — Final Deployment
+
+Choose deployment:
+
+Render
+
+Railway
+
+AWS
+
+PythonAnywhere
+
+Host:
+
+Backend server
+
+Frontend website
+
+STEP 11 — Write Project Report
+
+Include:
+
+Abstract
+
+Introduction
+
+Problem statement
+
+Existing system vs proposed system
+
+System architecture
+
+Data flow diagram
+
+Screenshots
+
+Test cases
+
+Results
+
+Conclusion
+
+Future scope
+
+⭐ 12. Final Submission Package
+
+Your capstone project should include:
+
+✔ Full source code
+
+✔ Dataset (Government schemes)
+
+✔ Project report (PDF)
+
+✔ PPT presentation
+
+✔ Demonstration video (optional but recommended)
+
+🎉 Your Full Instruction Guide Is Ready!
+
+If you want, I can now generate for you:
+
+✔ Full Python Code
+
+✔ Full Frontend code
+
+✔ System architecture diagram
+
+✔ Project abstract
+
+✔ Complete project report PDF
+
+✔ PPT presentation
