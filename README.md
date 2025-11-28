@@ -1,4 +1,4 @@
-## YojanaConnect – Government Schemes Chatbot (AI + Python + RAG)
+## Government Schemes Chatbot (AI + Python + RAG)
 
 YojanaConnect is an AI-powered chatbot that helps users access accurate information about Central and State Government Schemes. Using Retrieval-Augmented Generation (RAG), it provides details such as eligibility, benefits, required documents, and application procedures.
 
