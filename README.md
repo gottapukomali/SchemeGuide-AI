@@ -102,11 +102,4 @@ WhatsApp/Telegram bot
 
 Admin dashboard
 
-## License
 
-Open-source for educational use.
-
-## Author
-
-Your Name
-Final Year Capstone Project – Government Schemes Chatbot
