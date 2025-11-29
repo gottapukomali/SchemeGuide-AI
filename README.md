@@ -32,7 +32,7 @@ Frontend: HTML, CSS, JavaScript
 
 ## Installation
 1. Clone the repository
-git clone https://github.com/yourusername/govt-schemes-chatbot.git
+git clone https://github.com/gottapukomali/govt-schemes-chatbot.git
 cd govt-schemes-chatbot
 
 2. Install dependencies
